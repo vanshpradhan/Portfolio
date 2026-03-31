@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Vansh Pradhan — 3rd-year Computer Science student specializing in Web Development, AI, and Research." />
+  <meta name="keywords" content="Vansh Pradhan, Portfolio, Web Developer, Computer Science, SRM IST, AI, Machine Learning" />
+  <meta name="author" content="Vansh Pradhan" />
+  <title>Vansh Pradhan — CS Student &amp; Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">VP.</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="nav-resume-btn" id="resumeBtn">Resume ↓</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Open to opportunities
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Vansh <span class="gradient-text">Pradhan</span></h1>
+        <p class="hero-tagline">B.Tech Computer Science &amp; Engineering · SRM IST</p>
+        <div class="hero-typing-wrapper">
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-open" style="width:18px;height:18px"></i>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="mail" style="width:18px;height:18px"></i>
+            Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Know Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-glow"></div>
+          <img src="assets/profile-placeholder.svg" alt="Vansh Pradhan" class="about-image" id="profileImage" />
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <p>
+            I am a 3rd-year Computer Science and Engineering student with a deep focus on 
+            <strong style="color:var(--accent-3)">Web Development</strong> and an active interest in 
+            <strong style="color:var(--accent-3)">Academic Research</strong>. I thrive on exploring 
+            emerging technologies—from AI integration to blockchain—and I'm constantly looking for ways 
+            to bridge the gap between innovative research and functional, real-world applications. 
+            I'm always eager to learn, build, and contribute to the next wave of tech.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <div class="stat-number" data-target="9.36">0</div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+        <p class="section-subtitle">A consistent pursuit of excellence in academics</p>
+      </div>
+      <div class="timeline">
+        <!-- SRM IST -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023 — 2027</span>
+            <h3 class="timeline-title">SRM IST — Tiruchirappalli</h3>
+            <p class="timeline-subtitle">B.Tech · Computer Science and Engineering</p>
+            <span class="timeline-grade">
+              <i data-lucide="award" style="width:14px;height:14px"></i>
+              CGPA — 9.36 / 10
+            </span>
+          </div>
+        </div>
+        <!-- Class XII -->
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023</span>
+            <h3 class="timeline-title">St Augustine's School — Kalimpong</h3>
+            <p class="timeline-subtitle">Class XII — ISC · PCMC</p>
+            <span class="timeline-grade">
+              <i data-lucide="award" style="width:14px;height:14px"></i>
+              Percentage — 90%
+            </span>
+          </div>
+        </div>
+        <!-- Class X -->
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2021</span>
+            <h3 class="timeline-title">St Augustine's School — Kalimpong</h3>
+            <p class="timeline-subtitle">Class X — ICSE · All Subjects</p>
+            <span class="timeline-grade">
+              <i data-lucide="award" style="width:14px;height:14px"></i>
+              Percentage — 85%
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">My Toolkit</h2>
+        <p class="section-subtitle">Technologies, domains, and interests I work with</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-category-icon">💻</div>
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <!-- Domain Knowledge -->
+        <div class="skill-category glass-card reveal reveal-delay-1">
+          <div class="skill-category-icon">📚</div>
+          <h3 class="skill-category-title">Domain Knowledge</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Artificial Intelligence</span>
+            <span class="skill-tag">IoT</span>
+            <span class="skill-tag">FinTech</span>
+            <span class="skill-tag">ERP</span>
+          </div>
+        </div>
+        <!-- Areas of Interest -->
+        <div class="skill-category glass-card reveal reveal-delay-2">
+          <div class="skill-category-icon">🔭</div>
+          <h3 class="skill-category-title">Areas of Interest</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">AI & Decision Intelligence</span>
+            <span class="skill-tag">FinTech & Decentralized Systems</span>
+            <span class="skill-tag">Digital Twin Framework</span>
+            <span class="skill-tag">Entrepreneurship</span>
+          </div>
+        </div>
+        <!-- Technical Skills -->
+        <div class="skill-category glass-card reveal reveal-delay-3">
+          <div class="skill-category-icon">⚙️</div>
+          <h3 class="skill-category-title">Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">Backend & APIs</span>
+            <span class="skill-tag">Frontend Development</span>
+            <span class="skill-tag">Databases & Infrastructure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Professional Journey</h2>
+      </div>
+      <div class="experience-card glass-card reveal">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-role">Technical Lead & Founder</h3>
+            <p class="experience-company">Trident — Co-owner · Self-Employed</p>
+          </div>
+          <div class="experience-meta">
+            <p class="experience-date">Jun 2023 — Present</p>
+            <p class="experience-location">📍 Jaigaon, India</p>
+          </div>
+        </div>
+        <div class="experience-details">
+          <div class="experience-detail-item">
+            <span class="icon">🌐</span>
+            Real-time Booking System
+          </div>
+          <div class="experience-detail-item">
+            <span class="icon">📊</span>
+            Inventory Dashboard
+          </div>
+          <div class="experience-detail-item">
+            <span class="icon">🔐</span>
+            Admin Portal
+          </div>
+          <div class="experience-detail-item">
+            <span class="icon">🎁</span>
+            Loyalty Scheme
+          </div>
+          <div class="experience-detail-item">
+            <span class="icon">📈</span>
+            Business Operations & Management
+          </div>
+          <div class="experience-detail-item">
+            <span class="icon">🎯</span>
+            Customer Acquisition & Marketing
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">A showcase of my technical projects spanning web, ML, and research</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- BariatSim -->
+        <div class="project-card glass-card reveal">
+          <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-color);">
+            <span style="font-size:3rem;">🫁</span>
+          </div>
+          <div class="project-body">
+            <span class="project-type">Mini Project · Feb 2026 — Present</span>
+            <h3 class="project-title">BariatSim</h3>
+            <p class="project-description">
+              A patient-specific digital twin framework using 3D stomach models from medical images, enriched 
+              with biomechanical data, to simulate stapling/cutting in Bariatric Surgery. It predicts stress 
+              distribution and tissue failure, enabling personalized surgical planning and safer outcomes.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">3D Slicer</span>
+              <span class="project-tag">ITK-Snap</span>
+              <span class="project-tag">FEM</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trident Website -->
+        <div class="project-card glass-card reveal reveal-delay-1">
+          <div style="width:100%;height:200px;background:linear-gradient(135deg,#0d1117,#161b22,#21262d);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-color);">
+            <span style="font-size:3rem;">🎮</span>
+          </div>
+          <div class="project-body">
+            <span class="project-type">Personal · Dec 2025 — Feb 2026</span>
+            <h3 class="project-title">Trident Website</h3>
+            <p class="project-description">
+              A full-stack management platform for my gaming cafe. Features a dynamic frontend for users to browse 
+              game libraries and a secure administrative dashboard protected by JWT and Bcrypt for real-time 
+              inventory and booking management. Containerized using Docker for consistent deployment and high availability.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">JWT</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Object Detection -->
+        <div class="project-card glass-card reveal reveal-delay-2">
+          <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a1a2e,#2d1b69,#5c2d91);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-color);">
+            <span style="font-size:3rem;">👁️</span>
+          </div>
+          <div class="project-body">
+            <span class="project-type">ML Project · Jan 2025 — Apr 2025</span>
+            <h3 class="project-title">Object Detection</h3>
+            <p class="project-description">
+              A computer vision system designed for real-time object identification and localization. Leverages 
+              pre-trained deep learning models and OpenCV to process image and video data, allowing concurrent 
+              detection of multiple object classes.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">YOLO</span>
+              <span class="project-tag">TensorFlow</span>
+              <span class="project-tag">NumPy</span>
+              <span class="project-tag">Matplotlib</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soil Microbiome -->
+        <div class="project-card glass-card reveal reveal-delay-3">
+          <div style="width:100%;height:200px;background:linear-gradient(135deg,#0b3d0b,#1a472a,#2d6a4f);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-color);">
+            <span style="font-size:3rem;">🌱</span>
+          </div>
+          <div class="project-body">
+            <span class="project-type">ML & Agriculture · Sep 2024 — Dec 2024</span>
+            <h3 class="project-title">Soil Microbiome Health Prediction</h3>
+            <p class="project-description">
+              A hybrid deep learning system (CNN-BiLSTM) to predict soil health and crop productivity by integrating 
+              IoT sensor inputs with metagenomic (16S rRNA) sequencing data. Provides actionable insights for 
+              precision farming, targeting high-performance metrics for soil diversity and yield estimation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">TensorFlow/Keras</span>
+              <span class="project-tag">CNN-BiLSTM</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Genomic Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPETITIONS ===== -->
+  <section class="section" id="competitions" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Competitions</span>
+        <h2 class="section-title">Hackathons & Contests</h2>
+        <p class="section-subtitle">Competing, collaborating, and creating under pressure</p>
+      </div>
+      <div class="competitions-grid">
+        <div class="competition-card glass-card reveal">
+          <div class="competition-rank">TOP 5</div>
+          <div class="competition-name">Smartathon</div>
+          <div class="competition-date">Oct 2025</div>
+        </div>
+        <div class="competition-card glass-card reveal reveal-delay-1">
+          <div class="competition-rank">TOP 10</div>
+          <div class="competition-name">MedAiThon</div>
+          <div class="competition-date">Oct 2025</div>
+        </div>
+        <div class="competition-card glass-card reveal reveal-delay-2">
+          <div class="competition-rank">TOP 10</div>
+          <div class="competition-name">NoobHackFest</div>
+          <div class="competition-date">Feb 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Certifications</span>
+        <h2 class="section-title">Credentials & Badges</h2>
+      </div>
+      <div class="certifications-list">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-info">
+            <h4 class="cert-name">AICTE Virtual Internship</h4>
+            <p class="cert-issuer">AICTE</p>
+          </div>
+          <a href="#" class="cert-link" target="_blank" rel="noopener">
+            View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="cert-card glass-card reveal reveal-delay-1">
+          <div class="cert-info">
+            <h4 class="cert-name">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h4>
+            <p class="cert-issuer">Oracle · 103436920OCI25FNDCFA · Mar 2026</p>
+          </div>
+          <a href="#" class="cert-link" target="_blank" rel="noopener">
+            View <i data-lucide="external-link" style="width:14px;height:14px"></i>
+          </a>
+        </div>
+        <div class="cert-card glass-card reveal reveal-delay-2">
+          <div class="cert-info">
+            <h4 class="cert-name">Getting Started with Artificial Intelligence</h4>
+            <p class="cert-issuer">IBM · Mar 2026</p>
+          </div>
+          <a href="#" class="cert-link" target="_blank" rel="noopener">
+            View <i data-lucide="external-link" style="width:14px;height:14px"></i>
+          </a>
+        </div>
+        <div class="cert-card glass-card reveal reveal-delay-3">
+          <div class="cert-info">
+            <h4 class="cert-name">AWS Academy Cloud Architecting</h4>
+            <p class="cert-issuer">AWS Academy · Mar 2025</p>
+          </div>
+          <a href="#" class="cert-link" target="_blank" rel="noopener">
+            View <i data-lucide="external-link" style="width:14px;height:14px"></i>
+          </a>
+        </div>
+        <div class="cert-card glass-card reveal reveal-delay-4">
+          <div class="cert-info">
+            <h4 class="cert-name">Essentials Automation Certification — 2024</h4>
+            <p class="cert-issuer">Automation Anywhere · AAESSE2024A360-164444406 · Oct 2025</p>
+          </div>
+          <a href="#" class="cert-link" target="_blank" rel="noopener">
+            View <i data-lucide="external-link" style="width:14px;height:14px"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a question or want to work together? Drop me a message!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out for collaborations, opportunities, or just a friendly chat about technology.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="mail" style="width:20px;height:20px"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">vp2431@srmist.edu.in</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="phone" style="width:20px;height:20px"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">+91 7063472839</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="map-pin" style="width:20px;height:20px"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Address</span>
+                <span class="contact-item-value">S Block Boys Hostel, SRM Nagar, Trichy-621105, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal reveal-delay-2" id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Your Email</label>
+            <input type="email" id="contactEmail" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <i data-lucide="send" style="width:18px;height:18px"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">VP.</a>
+        <p class="footer-text">&copy; 2026 Vansh Pradhan. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
