@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansh Pradhan | Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Using Syne for the wide, technical heading look, and Outfit for clean sans-serif body -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css?v=2.4" />
+</head>
+<body class="light-theme">
+
+  <!-- Grainy Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Ambient Blobs -->
+  <div class="blobs-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header & Navigation Trigger -->
+  <header class="header">
+    <a href="index.html#home" class="logo" data-hover>VP<span class="dot">.</span></a>
+    
+    <div class="header-controls">
+      <button class="theme-toggle" id="themeToggle" data-hover aria-label="Toggle Dark Mode">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="moon-icon"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      </button>
+      
+      <!-- 9-dot grid menu button -->
+      <button class="menu-btn" id="menuBtn" data-hover aria-label="Open Menu">
+        <div class="menu-grid">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Menu -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="index.html#about" class="nav-link" data-hover><span class="nav-num">[01]</span> About</a></li>
+        <li><a href="index.html#projects" class="nav-link" data-hover><span class="nav-num">[02]</span> Projects</a></li>
+        <li><a href="index.html#journey" class="nav-link" data-hover><span class="nav-num">[03]</span> Journey</a></li>
+        <li><a href="index.html#skills" class="nav-link" data-hover><span class="nav-num">[04]</span> Skills</a></li>
+        <li><a href="#" class="nav-link" data-hover><span class="nav-num">[05]</span> Certifications</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-hover><span class="nav-num">[06]</span> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content" id="smooth-wrapper">
+    
+    <!-- SPACER for layout -->
+    <div style="height: 100px;"></div>    <!-- CERTIFICATIONS & COMPETITIONS -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <h2 class="section-title">CERTIFICATIONS & COMPETITIONS</h2>
+          <span class="item-count">08</span>
+        </div>
+        <div class="section-divider reveal"></div>
+        
+        <div class="list-container">
+          <div class="list-item reveal">
+            <div class="list-left">
+              <h3 class="list-title lowercase">orace cloud infrastructure foundations</h3>
+            </div>
+            <div class="list-right"><span class="list-category">Oracle</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <h3 class="list-title lowercase">getting started with artificial intelligence</h3>
+            </div>
+            <div class="list-right"><span class="list-category">IBM</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <h3 class="list-title lowercase">aws academy cloud architecting</h3>
+            </div>
+            <div class="list-right"><span class="list-category">AWS</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <h3 class="list-title lowercase">essentials automation certification</h3>
+            </div>
+            <div class="list-right"><span class="list-category">Automation Anywhere</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <h3 class="list-title lowercase">aicte virtual internship</h3>
+            </div>
+            <div class="list-right"><span class="list-category">AICTE</span></div>
+          </div>
+          
+          <!-- Competitions -->
+          <div class="list-item reveal">
+            <div class="list-left">
+              <span class="list-date">Top 5</span>
+              <h3 class="list-title lowercase">smartathon</h3>
+            </div>
+            <div class="list-right"><span class="list-category">Hackathon</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <span class="list-date">Top 10</span>
+              <h3 class="list-title lowercase">medaithon</h3>
+            </div>
+            <div class="list-right"><span class="list-category">Hackathon</span></div>
+          </div>
+          <div class="list-item reveal">
+            <div class="list-left">
+              <span class="list-date">Top 10</span>
+              <h3 class="list-title lowercase">noobhackfest</h3>
+            </div>
+            <div class="list-right"><span class="list-category">Hackathon</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer reveal">
+      <div class="container">
+        <div class="footer-content">
+          <span>&copy; 2026 Vansh Pradhan</span>
+        </div>
+      </div>
+    </footer>
+    
+  </main>
+
+  <script src="js/main.js?v=2.0"></script>
+</body>
+</html>
